@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css?family=open+sans');
+*
+{
+    margin: 0;
+    font-family: 'poppins',sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header
+{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:20px 10px ;
+    background:black;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.butt{
+    background:black;
+    display: inline-block;
+    color: #c7a17a;
+    border: 1px solid  #c7a17a;
+    padding: 7px 12px;
+    border-radius: 5px;/*border shape*/
+}
+.header.logo
+{
+    font-size: 2em;
+    text-decoration: none;
+}
+
+
+.nav a
+{
+    position: relative;
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.nav a::after
+{
+    content: ' ';
+    position: absolute;
+    left: 0;
+    right: 5;
+    bottom: -6px;
+    width:100%;
+    height:3px;
+    background: white;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: .5s;
+}
+
+.nav a:hover::after
+{
+    transform: scaleX(1);
+    
+}
+
+.home
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(pic/bg7.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding:80px 100px 0;
+}
+.home.content
+{
+    max-width: 400px;
+    
+}
+
+.content h2
+{
+font-size: 3em;
+letter-spacing: .03em;
+}
+
+.content p
+{
+    margin: 10px 0 40px;
+}
+
+
+.home.login
+{
+    position: relative;
+    width: 440px;
+}
+.login h2
+{
+    font-size:3em;
+    color:white;
+    text-align: center;
+}
+
+.container
+{
+    position:relative;
+    width:400px;
+    height:500px;
+    background:transparent;
+    border:2px solid rgba(255,255,255,.5);
+    border-radius:20px;
+    backdrop-filter:blur(20px);
+    /* box-shadow:0 0 30px rgba(0,0,0,.5); */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container.form-box
+{
+    width:100%;
+    padding:40px 40px 40px 40px;
+}
+
+.form-box h2
+{
+    font-size: 2em;
+    color:white;
+    text-align: center;
+}
+
+.input-box
+{
+    position: relative;
+    width:100%;
+    height:50px;
+    border-bottom: 2px solid #162938;
+    margin:30px 0 ;
+}
+
+.input-box label
+{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+
+
+.input-box input
+{
+    width: 100%;
+    padding: 12px;
+    border: 3px solid #c7a17a;
+    border-radius: 4px;
+    resize: vertical;
+
+}
+
+
+
+
+
+.btn 
+{
+    width: 100%;
+    height:40px;
+    background: black;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor:pointer;
+    font-size: 1em;
+    color:white;
+    font-weight: 500;
+
+}
+
+.login-register
+{
+    font-size: .9em;
+    color: black;
+    text-align: center;
+    font-weight: 500;
+    margin:25px 0 10px;
+}
+
+.login-register p a
+{
+    color:black;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+.login-register p a:hover
+{
+    text-decoration: underline;
+    color: #c7a17a;
+}
